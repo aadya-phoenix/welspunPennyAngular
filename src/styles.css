@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+.col-4 {
+    
+    max-width: 32.333333%;
+    margin-right: 11px !important;
+}/* You can add global styles to this file, and also import other style files */

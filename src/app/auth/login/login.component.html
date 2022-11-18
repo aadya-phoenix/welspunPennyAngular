@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="mt-5 row">
+    <div class="col-sm-6">
+      <img src="../../../assets/img/login.png">
+    </div>
+    <div class="col-sm-6">
+      <img src="../../../assets/img/logo.png" class="mb-4">
+      <div class="heading-login">
+        <p class="pen-dr-to mb-0">Penny Drop Tool</p>
+        <p class="welcome-back"><b>Welcome back.</b>Please sign in to your account.</p>
+      </div>
+      <form [formGroup]="loginForm">
+      <div class="form-box row">
+        <div class="mb-3 col-12">
+          <label for="formGroupExampleInput" class="form-label mb-1 fw-bolder">Your Login Id</label>
+          <input type="text" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Enter Login Id" formControlName="loginId">
+        </div>
+        <div class="mb-3 col-12">
+          <label for="formGroupExampleInput2" class="form-label mb-1 fw-bolder">Your Login Password</label>
+          <input type="password" class="form-control bac-form" id="formGroupExampleInput2"
+            placeholder="Enter password" formControlName="password">
+        </div>
+        <div class="col-12 mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="mb-0 recover-pass">Recover Password</p>
+            <button type="button" class="btn btn-primary" (click)="login()">Login To Dashboard</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+.mt-200{
+    margin-top: 200px;
+}
+.pen-dr-to{
+    font-size: 38px;
+    font-weight: 200;
+    margin-bottom: 3px;
+}
+.welcome-back{
+    font-size: 20px;
+}
+.btn-primary{
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+
+.btn-primary:hover {
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+.recover-pass{
+    color: #1eaedb;
+    font-weight: 400;
+    font-size: 20px;
+}
+.bac-form{
+    background: #e8f0fe;
+}
+
+

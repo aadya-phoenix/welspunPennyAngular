@@ -1,0 +1,134 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow-nav p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img src="../../../assets/img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard/verify">Account Verification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" routerLink="/dashboard/report">Report</a>
+        </li>
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard/user">User Management</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle p-2" type="button" id="dropdownMenuButton1" routerLink="/login"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Logout
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="p-5">
+  <div class="row">
+    <div class="col-sm-12">
+      <p class="pen-dr-to mb-3">Account Verification Status</p>
+      <p class="welcome-back"><b>Multiple.</b>Account verification module.</p>
+      <div class="form-box row mt-5">
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">Date</label>
+          <input type="date" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">Date</label>
+          <input type="date" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">Account Number</label>
+          <input type="text" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">Account Name</label>
+          <input type="text" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">IFSC Code</label>
+          <input type="text" class="form-control bac-form" id="formGroupExampleInput"
+            placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3 col-4">
+          <label for="formGroupExampleInput" class="form-label mb-2 fw-bolder">Payment Status</label>
+          <select class="form-control bac-form">
+            <option></option>
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+        <div class="col-12 mt-3">
+          <div class="d-flex justify-content-end align-items-center">
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 mt-5">
+      <div class="table table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Record No</th>
+              <th>Name</th>
+              <th>Account No</th>
+              <th>IFSC Code</th>
+              <th>Date/Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><button class="btn btn-success button_width">Verified
+                </button> <img src="../../../assets/img/tick.png" class="ml-2">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><button class="btn btn-danger button_width">Failed</button>
+                <img src="../../../assets/img/cross.png" class="ml-2">
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><button class="btn btn-warning button_width">Processing</button>
+                <img src="../../../assets/img/circle.png" class="ml-2">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

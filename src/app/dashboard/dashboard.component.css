@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+/* Navbar */
+.box-shadow-nav{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.mt-200{
+    margin-top: 200px;
+}
+.pen-dr-to{
+    font-size: 38px;
+    font-weight: 200;
+    margin-bottom: 3px;
+}
+.welcome-back{
+    font-size: 20px;
+}
+.btn-primary{
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+
+.btn-primary:hover {
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background: #33c3f0;
+    border-color: #33c3f0;
+}
+.recover-pass{
+    color: #1eaedb;
+    font-weight: 400;
+    font-size: 20px;
+}
+.bac-form{
+    background: #e8f0fe;
+}
+
+.excel-margin{
+    margin-right: 50px;
+}
+.file-selected{
+    width: 57%;
+    margin: auto;
+}
+.upload-account{
+    width: 64%;
+    margin: auto;
+}
+.button_width{
+    font-size: 13px;
+    width: 115px;
+}
+.counter {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    border-radius: 5px;
+  }
+  
+  .count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+  }
+  
+
+@media(max-width:768px){
+    .col-4 {
+      width: 100%;
+    }
+    
+    }

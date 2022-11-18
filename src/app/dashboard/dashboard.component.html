@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow-nav p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand"><img src="../../../assets/img/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard/verify">Account Verification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard/report">Report</a>
+        </li>
+        <li class="nav-item" *ngIf="isAdmin">
+          <a class="nav-link fw-bold" aria-current="page" routerLink="/dashboard/user">User Management</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle p-2" type="button" id="dropdownMenuButton1" routerLink="/login"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Logout
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"
+            style="right: 0 !important;left: auto !important;">
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="p-5">
+<div class="row text-center">
+  <div class="col-4">
+    <div class="counter">
+      <img src="../../../assets/img/totalaccount.png" style="width:28px;">
+      <h2 class="timer count-title count-number">110</h2>
+      <p class="count-text ">Total Account</p>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="counter">
+      <img src="../../../assets/img/active.png" style="width:28px;">
+      <h2 class="timer count-title count-number">1111</h2>
+      <p class="count-text ">Active</p>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="counter">
+      <img src="../../../assets/img/hold.png" style="width:28px;">
+      <h2 class="timer count-title count-number">111</h2>
+      <p class="count-text ">Hold</p>
+    </div>
+  </div>
+</div>
+</div>
